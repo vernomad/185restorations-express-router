@@ -43,16 +43,17 @@
     <%- body %>
     <%- include('../partials/footer.ejs') %>
     </div>
-</body>
-<script type="text/javascript" id="sw">
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-            navigator.serviceWorker.register('sw.js').then(function (reg) {
-                console.log('Successfully registered service worker', reg);
-            }).catch(function (err) {
-                console.warn('Error whilst registering service worker', err);
+    <script type="text/javascript" id="sw" defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (reg) {
+                    console.log('Successfully registered service worker', reg);
+                }).catch(function (err) {
+                    console.warn('Error whilst registering service worker', err);
+                });
             });
-        });
-    }
-</script>
+        }
+    </script>
+</body>
+
 </html>
