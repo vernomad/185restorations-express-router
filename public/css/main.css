@@ -441,7 +441,7 @@ nav li:first-child {
 }
 
 .container_header {
-  inline-size: min(100% - 4rem, 70rem);
+  inline-size: min(100% - 4rem, 50rem);
   margin-inline: auto;
 }
 
@@ -557,7 +557,7 @@ form {
 
 .bg__header {
   padding-block: var(--bg-padding);
-  background-image: url("/public/assets/img/dash.jpg"), linear-gradient(-25deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 40%);
+  background-image: url("/public/assets/img/dash.jpg"), linear-gradient(-25deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 60%);
   background-size: cover;
   background-position: center;
   background-position-y: top;
