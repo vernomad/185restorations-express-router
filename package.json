@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "engines": {
-    "node": "v18.16.1"
+    "node": "v18.18.2"
   },
   "scripts": {
     "deploy": "workbox generateSW",
@@ -28,7 +28,7 @@
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "date-fns": "^2.29.3",
-    "dompurify": "^2.4.1",
+    "dompurify": "^2.4.7",
     "dotenv": "^16.0.3",
     "easymde": "^2.18.0",
     "ejs": "^3.1.8",
@@ -36,9 +36,9 @@
     "express-ejs-layouts": "^2.5.1",
     "jsdom": "^20.0.3",
     "jsonwebtoken": "^9.0.2",
-    "marked": "^4.2.4",
+    "marked": "^4.3.0",
     "method-override": "^3.0.0",
-    "mongoose": "^6.8.0",
+    "mongoose": "^6.12.1",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.0.1",
     "slugify": "^1.6.5",
@@ -48,6 +48,6 @@
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "sass": "^1.57.0",
-    "workbox-build": "^6.5.4"
+    "workbox-build": "^6.6.0"
   }
 }
