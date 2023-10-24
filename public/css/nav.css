@@ -1,0 +1,140 @@
+:root {
+  --width: 100vw;
+  --width2: 25vw;
+  --vw: var(--width2);
+}
+
+.project_nav a.active {
+  color: var(--active);
+}
+
+.project_nav a:hover {
+  color: var(--project-nav-hover-color);
+  background-color: var(--project-nav-background-hover);
+  font-weight: 500;
+  transition: 100ms;
+  box-shadow: 1px 1px 5px rgba(58, 58, 58, 0.8);
+}
+
+#myImg {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#myImg:hover {
+  transform: scale(1.02);
+}
+
+.project_nav.active {
+  transform: translateX(0);
+}
+
+.project_nav {
+  height: 100vh;
+  background: linear-gradient(var(--color-black-nav), var(--color-nav));
+  width: 25%;
+  min-width: 170px;
+  position: fixed;
+  overflow: scroll;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transition: 0.5s ease;
+}
+
+.project_nav ul {
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+  padding: 1rem;
+  height: fit-content;
+  position: relative;
+  text-align: center;
+}
+
+.project_nav ul:first-child {
+  margin-top: 4rem;
+}
+
+.project_nav li {
+  border-bottom: 2px solid var(--nav-underline);
+  color: var(--body-font-color);
+  list-style: none;
+}
+
+.project_nav p {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0.5rem 0 0;
+}
+
+.project_nav a {
+  display: flex;
+  /* margin-top: 1.5rem; */
+  /* width: 100%; */
+  /* align-content: center; */
+  /* justify-content: flex-start; */
+  align-items: center;
+  transition: all 300ms ease-in;
+  text-decoration: none;
+}
+
+.nav_box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 0 2.7rem;
+}
+
+.menu.active {
+  transform: translateX(150px);
+}
+
+.menu {
+  position: fixed;
+  left: 1.5rem;
+  top: 3.7rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  cursor: pointer;
+  display: none;
+  padding: 3px 5px 5px;
+  border-radius: 5px;
+  z-index: 4;
+}
+
+.menu:hover {
+  color: #23bcae;
+}
+
+.menu:focus-visible {
+  color: #23bcae;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (max-width: 599px) {
+  .project_nav {
+    transform: translateX(-110%);
+  }
+  .menu {
+    display: block;
+  }
+}

@@ -1,0 +1,48 @@
+
+        <div class="form-rows">
+            <div class="form-items">
+                <label>Projects Name</label>
+                <input required value="<%= project.name %>" type="text" name="name" id="name" class="form-controls"
+                    placeholder="Name must between 4 and 20" />
+                <div class="name error"></div>
+            </div>
+            <div class="form-items">
+                <label>Publish Date</label>
+                <input type="date" name="publishDate" class="form-controls"
+                    value="<%= project.publishDate == null ? '' : project.publishDate.toISOString().split('T')[0] %>">
+                <div class="publishDate error"></div>
+            </div>
+        </div>
+
+        <div class="form-rows">
+            <div class="form-items form-items-no-grow">
+                <label>Thumbnail</label>
+                <input type="file" name="coverImage" id="pondFile" class="project-coverImage filepond"
+                    accept="image/png, image/jpeg, image/jpg, image/gif"/>
+                <div class="coverImage error"></div>
+            </div>
+            <div class="form-items">
+                <label>Side navigation description</label>
+
+                <textarea name="description" class="form-controls"
+                    placeholder="Between 4 & 20 characters"><%= project.description %></textarea>
+
+                <div class="description error"></div>
+            </div>
+        </div>
+        <div class="form-items">
+            <label>Project description</label>
+            <textarea name="markdown" id="markdown" class="form-control mb-2" placeholder="Write here"><%= project.markdown %></textarea>
+        </div>
+
+<script defer src="/public/js/upload copy.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+<script>
+    const easyMDE = new EasyMDE({
+        element: document.getElementById('markdown'),
+        uploadImage: true
+    });
+</script>
+<!-- <script>
+    easyMDE.value('Write stuff *here!*');
+    </script> -->

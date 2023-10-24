@@ -1,0 +1,302 @@
+.file-field {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.file-field .file-path-wrapper {
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.file-field input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20 px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.file-field input.file-path {
+    width: 100%;
+}
+
+// input[type=text]:not(.browser-default) {
+//     background-color: transparent;
+//     border: none;
+//     border-bottom: 1px solid #9e9e9e;
+//     border-radius: 0;
+//     outline: none;
+//     color: wheat;
+//     height: 3rem;
+//     width: 100%;
+//     font-size: 1rem;
+//     margin: 0 0 20px 0;
+//     padding: 0;
+//     -webkit-box-shadow: none;
+//     box-shadow: none;
+//     -webkit-box-sizing: content-box;
+//     box-sizing: content-box;
+//     -webkit-transition: all 0.3s;
+//     transition: all 0.3s;
+// }
+#multi_upload_form {
+    margin: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+input {
+    line-height: normal;
+}
+
+.btn span {
+    font-size: inherit;
+}
+
+.file-field .btn,
+.file-field .btn-large {
+    float: left;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: 0;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+        0 1px 5px 0 rgb(0 0 0 / 12%),
+        0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+
+.btn {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn:hover {
+    color: white;
+}
+
+/* 14 */
+.btn-14 {
+    background-color: #26a69a;
+    border: none;
+    z-index: 1;
+}
+
+.btn-14:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #20beae;
+    background-image: linear-gradient(315deg, #20beae 0%, #19d3c1 74%);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+    color: white;
+}
+
+.btn-14:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.btn-14:active {
+    top: 2px;
+}
+
+.file-path:focus {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.container_img__buttons {
+    margin: 1rem 0;
+}
+
+/* MAIN STYLE */
+
+.card {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fafbff;
+    margin-bottom: 1rem;
+}
+
+.card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card p,
+p,
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #878a9a;
+}
+
+.card button {
+    outline: 0;
+    border: 0;
+    -webkit-appearence: none;
+    background: #5256ad;
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    font-size: 0.8rem;
+    padding: 8px 13px;
+}
+
+.card button:hover {
+    opacity: 0.8;
+}
+
+.card button:active {
+    transform: translateY(5px);
+}
+
+.card .drag-area {
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+    border: 2px dashed #d5d5e1;
+    color: #c8c9dd;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+    background: #dfe3f259;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-top: 10px;
+}
+
+.card .drag-area .visible {
+    font-size: 18px;
+}
+
+.card .select {
+    color: #5256ad;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card .select:hover {
+    opacity: 0.6;
+}
+
+.card .container_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    margin-inline: auto;
+}
+
+// .card .container_img {
+//     width: 104%;
+//     height: auto;
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//     flex-wrap: wrap;
+//     // max-height: 200px;
+//     overflow-y: auto;
+//     margin-top: 10px;
+// }
+
+.card .container_img .image {
+    // width: calc(26% - 19px);
+    // margin-right: 15px;
+    // height: 75px;
+    position: relative;
+    //margin-bottom: 8px;
+}
+
+.card .container_img .image img {
+    // width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card .container_img .image span {
+    position: absolute;
+    top: -2px;
+    right: 9px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* dragover class will used in drag and drop system */
+.card .drag-area.dragover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.card .drag-area.dragover .on-drop {
+    display: inline;
+    font-size: 28px;
+}
+
+.card input,
+.card .drag-area .on-drop,
+.card .drag-area.dragover .visible {
+    display: none;
+}

@@ -1,0 +1,14 @@
+<head>
+  <link rel="stylesheet" href="/public/css/upload.css" crossorigin="anonymous">
+</head>
+<div class="container__admin">
+  <div class="section-title">
+    <h2> Hello <%= user.username %></h2>
+    <%= user.role.ROLE.USER %>
+    <div class="avatar_container">
+      <img src="<%= user.avatarImagePath%>" alt="avatar image">
+    </div>
+    <p>Create new admin!</p>
+  </div>
+  <%- include('../partials/_new_fields.ejs') %>
+</div>

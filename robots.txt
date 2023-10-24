@@ -1,0 +1,6 @@
+
+User-agent: *
+
+Allow: /
+
+Sitemap: https://185restorations.co.nz/sitemap.xml

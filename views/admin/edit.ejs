@@ -1,0 +1,24 @@
+<head>
+  <link rel="stylesheet" href="/public/css/upload.css" crossorigin="anonymous">
+  <link def rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+</head>
+<div class="container__admin">
+  <div class="section-title">
+    <h1> Hello <%= user.username %></h1>
+    <%= user.role.ROLE.USER %>
+    <div class="avatar_container">
+      <img src="<%= user.avatarImagePath%>" alt="avatar image">
+    </div>
+    <h2>Edit</h2>
+    <p><span> <%= project.name %></span></p>
+  </div>
+  <div class="container__upload">
+    <form action="/projects/edit/<%= project.id %>?_method=PUT" method="POST" id="form_project">
+      <%- include('../partials/_new_project_fields.ejs') %>
+      <div class="container__buttons">
+        <a href="/admin" class="btn btn-14">Cancel</a>
+        <button type="submit" class="btn btn-14">Update project</button>
+      </div>
+    </form>
+  </div>
+</div>

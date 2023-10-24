@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Orbitron";
+    src: local("Orbitron-Bold.ttf"),
+        url("../assets/fonts/orbitron/static/Orbitron-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Medium"), url("../assets/fonts/roboto/Roboto-Medium.ttf");
+    font-display: swap;
+}
+
+$darkRed: rgb(255, 0, 0);
+$lightRed: rgb(218, 106, 106);
+//Font
+$font-stack: -apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+'Open Sans',
+'Helvetica Neue',
+sans-serif;
+$primary-color: #333;
+:root {
+    --bg-padding: 14rem;
+    --form-border: white;
+    --form-input-background: rgb(176, 176, 176);
+    --color-text-forms: #efefef;
+
+    --project-coverImage-width: 200px;
+    --project-coverImage-width-small: 200px;
+    --project-coverImage-width-medium: 250px;
+    --project-coverImage-width-large: 325px;
+    --project-coverImage-aspect-ratio: 0.75;
+
+    --filepond-background-color: rgb(120 128 20);
+    --color-black-nav: #000;
+    --color-nav: #2e363e;
+    --a-hover: rgb(40 166 155);
+    --opacity-footer: 1;
+    --opacity-bg-projects: .2;
+    --font-sv: rgb(209, 209, 209);
+
+    @media (max-width: 499px) {
+        --bg-padding: 8rem 6rem;
+    }
+
+    --body-background-color: rgb(0, 0, 0);
+    --foot-h: rgb(188, 188, 188);
+    --body-font-color: rgb(221 221 221);
+    --nav-underline: rgb(123, 123, 123);
+    --progress-item-active: white;
+    --bg-about: #001a18;
+    --port-desc-background: rgba(0, 0, 0, 0.6);
+    --slider-padding: 5rem;
+    // --handle-size: 4rem;
+    --img-gap: .25rem;
+    --delete-button: rgb(182 24 75);
+    --theme-text-color: rgb(183, 15, 15);
+    --form-text-color: #90ce03;
+    --txt-placeholder: rgb(194, 194, 194);
+    --body-text: gray;
+    --bg-codemirror: #dbdebe;
+    --button-arrow: rgb(191, 191, 191);
+    @media (max-width: 500px) {
+        --img-gap: .15rem;
+    }
+}
+
+.lightmode {
+    --progress-item-active: black;
+    --port-desc-background: transparent;
+    --body-font-color: rgb(84 84 84);
+    --nav-underline: rgb(187, 187, 187);
+    --font-sv: rgb(241 241 241);
+    --form-text-color: rgb(37, 37, 37);
+    --body-background-color: rgb(243 243 243);
+    --foot-h: rgb(221, 221, 221);
+    --body-text: rgb(50, 50, 50);
+    --color-black-nav: #f7f7f7;
+    --color-nav: #c9c7c7;
+    --opacity-footer: .5;
+    --opacity-bg-projects: .1;
+    --bg-about: #26a6992b;
+    --filepond-background-color: rgb(255, 255, 255);
+    --txt-placeholder: rgb(132, 132, 132);
+    --color-text-forms: #353535;
+    --bg-codemirror: #ffffff;
+    --button-arrow: rgb(211, 211, 211);
+}

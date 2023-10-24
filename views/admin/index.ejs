@@ -1,0 +1,122 @@
+ <head>
+   <link rel="stylesheet" href="/public/css/upload.css" crossorigin="anonymous">
+   <link def rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+ </head>
+ <div class="container__admin">
+   <div class="section-title">
+     <h2> Hello <%= user.username %></h2>
+     <%= user.role.ROLE.USER %>
+     <div class="avatar_container">
+       <img src="<%= user.avatarImagePath%>" alt="avatar image">
+     </div>
+     <p>Upload your new project here</p>
+   </div>
+   <div class="container__upload">
+     <form action="/projects" method="POST" id="form_project">
+       <%- include('../partials/_new_project_fields')%>
+       <div class="container__buttons">
+         <a href="/admin" class="btn btn-14">Cancel</a>
+         <button type="submit" class="btn btn-14">Save new project</button>
+       </div>
+       </form>
+       </div>
+     <div class="container_project_links">
+       <div class="section-title_2" id="projects-list">
+         <h2 class="">Projects & Gallery Links!</h2>
+         <div class="error"><%= typeof msg !== "undefined" ? msg : " " %></div>
+       </div>
+       <div class="container__link__gallery">
+         <% project.forEach(project => { %>
+         <div class="projects_row">
+           <div class="column_1">
+             <ul>
+               <li><a id="gal" href="/projects/<%= project.slug %>"><%- project.name %></a></li>
+             </ul>
+             <ul>
+               <li><a id="edit" href="/admin/edit/<%= project.slug %>">edit</a></li>
+             </ul>
+             <%- include('../partials/deleteForm', { url: `/projects/${project.slug}` }) %>
+           </div>
+           <div class="column_2">
+             <p>Gallery</p>
+             <ul>
+               <li><a id="edit" href="/admin/<%= project.slug %>">add</a></li>
+             </ul>
+             <%- include('../partials/deleteForm', { url: `/admin/gallery/${project.slug}` }) %>
+           </div>
+         </div>
+         <% }) %>
+       </div>
+     </div>
+     <div class="container_admin_links">
+       <ul>
+         <li><a href="/admin/new" class="button logoutbutton-2">Create new admin</a></li>
+       </ul>
+       <ul>
+         <li><a href="/logout" class="button logoutbutton">Log out</a></li>
+       </ul>
+
+    </div>
+</div>
+<script>
+  const form = document.getElementById("form_project");
+  const nameError = document.querySelector('.name.error');
+  const publishDateError = document.querySelector('.publishDate.error');
+  const coverImageError = document.querySelector('.coverImage.error');
+  const descriptionError = document.querySelector('.description.error');
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    //reset errors
+
+    nameError.textContent = '';
+    publishDateError.textContent = '';
+    coverImageError.textContent = '';
+    descriptionError.textContent = '';
+
+    // get values
+
+    const name = form.name.value;
+    const publishDate = form.publishDate.value;
+    const coverImage = form.coverImage.value;
+    const description = form.description.value;
+    const markdown = form.markdown.value;
+    try {
+      const res = await fetch("/projects", {
+        headers: {
+          "Content-Type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify({
+          name,
+          publishDate,
+          coverImage,
+          description,
+          markdown,
+        }),
+
+      })
+
+      const data = await res.json()
+
+      console.log(data, "from data on json file")
+
+      if (data.errors) {
+        nameError.textContent = data.errors.name
+        publishDateError.textContent = data.errors.publishDate
+        coverImageError.textContent = data.errors.coverImage
+        descriptionError.textContent = data.errors.description
+      }
+
+      if (data.admin) {
+        location.assign("/admin/#projects-list")
+      }
+
+    } catch (err) {
+
+      location.assign("/admin/#projects-list");
+      console.log(err, "Something is not working as should do!!");
+    }
+  });
+</script>

@@ -1,0 +1,82 @@
+<head>
+    <link rel="stylesheet" href="/public/css/project.css" crossorigin="anonymous">
+</head>
+<div class="container__project">
+    <aside class="container__nav">
+        <%- include('../partials/_project_nav') -%>
+    </aside>
+    <div id="overlay"></div>
+    <main class="main">
+        <div class="container__gallery">
+            <div class="profile_bg_header">
+                <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+                <div class="filter_header"></div>
+                <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+                    stretch="none" alt="project header image"></img>
+                <div class="title-img">
+                    <h2><%= project.name %></h2>
+                </div>
+            </div>
+            <div class="gallery__grid">
+                <%= typeof msg != 'undefined' ? msg : '' %>
+                <div class="content" id="content">
+
+                    <% items.forEach(function(image) { %>
+                    <div class="image_box">
+                        <img id="myImg" src="data:image/<%=image.img.contentType%>;base64, 
+                         <%=image.img.data.toString('base64')%>" alt="<%= image.name%>" onclick="image(event)"
+                            onContextMenu="return false;">
+                        <% if (locals.user) { %>
+                        <form action="/admin/<%= image.id %>?_method=DELETE" method="POST" id="delete-image-id">
+                            <input type="hidden" name="hidden" value="<%= project.slug %>">
+                            <button type="submit" id="delete_button">delete</button>
+                        </form>
+                        <% } %>
+                    </div>
+                    <% }) %>
+                    <div id="myModal" class="modal">
+                        <div class="image">
+                            <img class="modal-content" id="img01">
+                            <span class="close">&times;</span>
+                            <div class="outer-caption">
+                                <div id="caption"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="html_markdown">
+                    <%- project.sanitizedHtml%>
+                </div>
+                <% if (locals.user) { %>
+                <div class="container__buttons">
+                    <ul>
+                        <li><a id="edit" href="/admin/edit/<%= project.slug %>">Edit-desc</a></li>
+                    </ul>
+                    <ul>
+                        <li><a id="edit" href="/admin/<%= project.slug %>">Add-gallery</a></li>
+                    </ul>
+                </div>
+                <% } %>
+            </div>
+
+    </main>
+</div>
+<script type="text/javascript">
+    var modal = document.getElementById('myModal');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById('caption');
+
+    function image(event) {
+        modal.style.display = "block";
+        modalImg.src = event.target.src;
+        captionText.innerHTML = event.target.alt;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>
+

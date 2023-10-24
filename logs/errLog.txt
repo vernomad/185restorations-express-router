@@ -1,0 +1,482 @@
+20221226	21:46:18	a022c570-5d37-438a-a80e-57d8652a88fd	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\edit.ejs:13
+    11|     </div>
+    12|     <h2>Edit</h2>
+ >> 13|     <p><span> <%= project.name %></span></p>
+    14|   </div>
+    15|   <div class="container__upload">
+    16|     <form action="/projects/edit/<%= project.id %>?_method=PUT" method="POST" id="form_project">
+
+Cannot read properties of null (reading 'name')
+20221226	21:47:12	941d0a17-f199-46f6-864d-9c91b0cbaa4c	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:47:14	0eafd50e-dca7-4ae8-bf59-c2735d33df9e	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:48:00	f645a10d-9e78-429c-9c41-ab7fbb1f5721	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\edit.ejs:13
+    11|     </div>
+    12|     <h2>Edit</h2>
+ >> 13|     <p><span> <%= project.name %></span></p>
+    14|   </div>
+    15|   <div class="container__upload">
+    16|     <form action="/projects/edit/<%= project.id %>?_method=PUT" method="POST" id="form_project">
+
+Cannot read properties of null (reading 'name')
+20221226	21:50:12	080a4641-5660-4802-9db3-14abcf8f4772	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:50:13	2da909a6-b2f1-4a3b-b50c-c114ebfab63e	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:50:14	75f4f3d0-3bdb-4042-9b6b-58a0eabb481a	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:50:15	e3e13ed3-3f9c-4a3a-8806-992cbd9bd09b	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:51:53	22df0338-8e9f-4839-a75c-0fd2b65c2ec8	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:51:54	7ce97c56-f6a6-482c-b41e-762879db90d8	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:51:55	5c4306ab-10e4-454e-868a-c623cafbad07	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:51:56	2f2df357-24ab-4957-9264-967bb7b6defe	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:56:14	7b2b1626-16bd-42f4-829a-429d54d5d907	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:56:15	c7e0f7a4-a822-446c-ad6e-052633f9268d	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:56:16	bd5f10e6-de8a-4303-900b-a64242a0d7fe	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:56:17	2898dece-3e1b-4179-bcb9-bd685f09c09b	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <!-- <input type="hidden" value="<%= project.id %>" name="hidden" hidden> -->
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:59:50	0aebaaa3-abbe-4300-809b-c2169b111a4f	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:59:51	1f2b8a9b-acfb-4d6a-b86e-ebdf5167bc94	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:59:52	b580f5d9-9bc9-48a1-a7ca-2bb476beedf4	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	21:59:53	5bbeb5d0-0fc6-4ce3-95fc-aaa141f44e9c	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:00:46	9785e97f-a874-43bc-974a-66c9292c107f	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:00:47	2968b3ed-40d6-471f-af20-94c4035e345e	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:00:48	753b26a2-8fb2-4c0d-b2cd-283ee7c96a46	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:00:50	e2846d7c-b5b9-4f5b-8dee-857bd8cbfb55	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:01:48	2f29855b-2735-4f56-bacf-1ae63aff2711	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:01:49	257b4240-fc1d-40d8-bcdf-286b0390dc6f	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:01:50	54605bec-17c6-4f50-ac9f-ce15c4eb82ce	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:01:51	4cbfcc9b-522f-4d3d-9417-26245679d8ce	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:02:57	34a03d59-fb5b-44bd-a4f8-df03fb33d1bf	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:02:58	4b72fd36-49ba-4813-aedc-7b43e71b6b24	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:02:59	465018b7-88bf-4eff-a7c4-43cd9599991f	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:03:00	da881f49-c148-4653-9e21-1b1a109cf134	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:04:10	17a011a0-a2aa-4730-ad81-c0f3474eb8c1	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:04:11	a30e7aed-9f3f-4110-a9b0-a06652c5d162	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:04:12	7f70d355-7806-4313-9637-91ddab9e3688	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:04:13	f8380858-7dfb-499a-bace-8290ff25fc87	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:05:58	c5763040-1a08-4fa1-ae1b-a8cb3acad2cd	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:05:59	7661954a-fc2e-483c-9d57-5f6bb5d67694	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:06:00	abe7a43a-335f-4e24-8e66-eb395e8501be	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:06:01	d9643747-019d-4128-a2aa-a17b1c368fe7	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:07:06	4f05c8c8-6587-4ed1-8201-0be17aab0e85	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:07:07	633ec348-12e5-4556-a415-245b465ed641	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:07:08	ad921302-644e-4c25-bfb8-7cedd9536445	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\projects\show.ejs:14
+    12|                 <h1 class="pageTitle" id="project-title"><span>185</span>PROJECTS</h1>
+    13|                 <div class="filter_header"></div>
+ >> 14|                 <img id="image1" row="0" col="1" src="<%= project.coverImagePath %>" horizontalAlignment="right"
+    15|                     stretch="none" alt="project header image"></img>
+    16|                 <div class="title-img">
+    17|                     <h2><%= project.name %></h2>
+
+Cannot read properties of null (reading 'coverImagePath')
+20221226	22:07:16	13aa2c86-74cf-46d6-b05d-dfc3476d040e	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\image-upload.ejs:7
+    5|     <div class="container_upload">
+    6|         <div class="section-title">
+ >> 7|             <h2 class="">Upload gallery 4<span> <%= project.name %></span></h2>
+    8|             <p>Do not overload 20 or you will break the internet!</p>
+    9|         </div>
+    10|         <div class="error"><%= typeof msg !== "undefined" ? msg : " " %></div>
+
+Cannot read properties of null (reading 'name')
+20221226	22:07:16	64fa9522-36ec-434b-a5e0-0ca8dcf6e047	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\image-upload.ejs:7
+    5|     <div class="container_upload">
+    6|         <div class="section-title">
+ >> 7|             <h2 class="">Upload gallery 4<span> <%= project.name %></span></h2>
+    8|             <p>Do not overload 20 or you will break the internet!</p>
+    9|         </div>
+    10|         <div class="error"><%= typeof msg !== "undefined" ? msg : " " %></div>
+
+Cannot read properties of null (reading 'name')
+20221226	22:07:17	b07e5a53-8f0e-4ad2-9f06-f52f0ae17c8a	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\image-upload.ejs:7
+    5|     <div class="container_upload">
+    6|         <div class="section-title">
+ >> 7|             <h2 class="">Upload gallery 4<span> <%= project.name %></span></h2>
+    8|             <p>Do not overload 20 or you will break the internet!</p>
+    9|         </div>
+    10|         <div class="error"><%= typeof msg !== "undefined" ? msg : " " %></div>
+
+Cannot read properties of null (reading 'name')
+20221226	22:08:22	54e0d14b-3fea-4a6b-8edd-4e9056bc6a62	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\edit.ejs:13
+    11|     </div>
+    12|     <h2>Edit</h2>
+ >> 13|     <p><span> <%= project.name %></span></p>
+    14|   </div>
+    15|   <div class="container__upload">
+    16|     <form action="/projects/edit/<%= project.id %>?_method=PUT" method="POST" id="form_project">
+
+Cannot read properties of null (reading 'name')
+20221226	22:11:41	e320b260-3b2c-4115-9fe3-5791e6734699	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\image-upload.ejs:7
+    5|     <div class="container_upload">
+    6|         <div class="section-title">
+ >> 7|             <h2 class="">Upload gallery 4<span> <%= project.name %></span></h2>
+    8|             <p>Do not overload 20 or you will break the internet!</p>
+    9|         </div>
+    10|         <div class="error"><%= typeof msg !== "undefined" ? msg : " " %></div>
+
+Cannot read properties of null (reading 'name')
+20221226	22:11:42	33add0aa-916c-4d9e-b343-43aa93805073	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\image-upload.ejs:7
+    5|     <div class="container_upload">
+    6|         <div class="section-title">
+ >> 7|             <h2 class="">Upload gallery 4<span> <%= project.name %></span></h2>
+    8|             <p>Do not overload 20 or you will break the internet!</p>
+    9|         </div>
+    10|         <div class="error"><%= typeof msg !== "undefined" ? msg : " " %></div>
+
+Cannot read properties of null (reading 'name')
+20221226	22:11:42	50208d15-ca5d-41de-8c77-1b02fb646a82	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\image-upload.ejs:7
+    5|     <div class="container_upload">
+    6|         <div class="section-title">
+ >> 7|             <h2 class="">Upload gallery 4<span> <%= project.name %></span></h2>
+    8|             <p>Do not overload 20 or you will break the internet!</p>
+    9|         </div>
+    10|         <div class="error"><%= typeof msg !== "undefined" ? msg : " " %></div>
+
+Cannot read properties of null (reading 'name')
+20221226	22:23:45	8f0bbd54-4187-4e38-a87e-bdaf436a5e49	TypeError: Cannot read properties of undefined (reading 'role')
+20230101	07:46:18	ce04e780-fff7-44c0-a499-f33337632827	Error: Not allowed by Cors
+20230101	07:46:18	ae455d21-18b5-43bc-8822-5b777b6457c7	Error: Not allowed by Cors
+20230103	19:29:39	fae716b8-593a-415f-b10d-6979571abbe7	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\index.ejs:7
+    5|  <div class="container__admin">
+    6|    <div class="section-title">
+ >> 7|      <h2> Hello <%= user.username %></h2>
+    8|      <%= user.role.ROLE.USER %>
+    9|      <div class="avatar_container">
+    10|        <img src="<%= user.avatarImagePath%>" alt="avatar image">
+
+Cannot read properties of null (reading 'username')
+20230103	19:29:39	6808086e-ccd7-4e0f-a5f7-c5acd4c9e16c	URIError: Failed to decode param '/%3C%=%20user.avatarImagePath%%3E'
+20230103	19:29:47	97b7ddae-39e7-431e-907a-799eadbfbf27	TypeError: C:\Users\verno\Desktop\Websites\twobeone.one\views\admin\index.ejs:7
+    5|  <div class="container__admin">
+    6|    <div class="section-title">
+ >> 7|      <h2> Hello <%= user.username %></h2>
+    8|      <%= user.role.ROLE.USER %>
+    9|      <div class="avatar_container">
+    10|        <img src="<%= user.avatarImagePath%>" alt="avatar image">
+
+Cannot read properties of null (reading 'username')
+20230103	19:35:56	41aafc5b-d170-438e-b38e-af3adc635d6e	TypeError: Cannot read properties of undefined (reading 'role')
+20230103	19:59:14	c562649e-206b-4ed4-8f40-c3478dacdb22	TypeError: Cannot read properties of undefined (reading 'role')
+20230103	20:00:14	8c16cf1e-dc03-4e72-aeb8-0dad2fc1f4d3	TypeError: Cannot read properties of undefined (reading 'role')
+20230103	20:01:17	00812975-5304-47e3-ba73-dcc321f92f54	TypeError: Cannot read properties of undefined (reading 'role')
+20230103	20:02:35	169548f9-e634-41cd-9100-fc7dadf8428b	TypeError: Cannot read properties of undefined (reading 'role')
+20230103	20:03:37	d2ff59e1-cf8c-4686-9ce9-a01cbe975c76	TypeError: Cannot read properties of undefined (reading 'role')
+20230103	20:10:32	95874da3-8640-4f82-875d-e195590f9b40	TypeError: Cannot read properties of undefined (reading 'role')
+20230103	20:11:17	ae0ad0c6-9418-4819-9e26-2050ebfa243c	TypeError: Cannot read properties of undefined (reading 'role')
+20230105	22:56:35	5c22ec2b-8dbe-4d08-8e50-908c48c67af5	TypeError: Cannot read properties of null (reading 'role')
+20230127	20:40:59	d6bf9762-5ea2-4bab-ba69-5009e3fc0e53	TypeError: Cannot read properties of null (reading 'role')

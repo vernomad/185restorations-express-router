@@ -1,0 +1,30 @@
+<button aria-label="Menu" aria-controls="secondary-navigation" aria-expanded="false" class="menu">
+    <ul>
+        <li>Menu</li>
+    </ul>
+</button>
+
+<div class="project_nav" id="project_nav">
+
+    <% projectnavs.forEach(projectnav => { %>
+    <ul>
+        <li>
+            <article>
+                <h2><%= projectnav.name %></h2>
+                <p><%= projectnav.description %></p>
+                <div class="nav_box">
+                    <a href="<%= projectnav.slug %>">
+                        <img id="myImg" src="<%= projectnav.coverImagePath %>" alt="<%= projectnav.name %>nav item"
+                            onContextMenu="return false;">
+                    </a>
+                </div>
+            </article>
+        </li>
+    </ul>
+    <% }) %>
+
+
+
+</div>
+<script defer src="/public/js/menu-burger.js">
+</script>

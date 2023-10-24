@@ -1,0 +1,113 @@
+<head>
+    <link rel="stylesheet" href="/css/upload.css" crossorigin="anonymous">
+</head>
+<div class="container__admin">
+    <div class="container_upload">
+        <div class="section-title">
+            <h2 class="">Upload gallery 4<span> <%= project.name %></span></h2>
+            <p>Do not overload 20 or you will break the internet!</p>
+        </div>
+        <div class="error"><%= typeof msg !== "undefined" ? msg : " " %></div>
+        <form action="/uploads/<%= project.slug %>" method="POST" enctype="multipart/form-data" id="multi_upload_form">
+            <div class="card">
+                <div class="top">
+                    <p>Drag & drop image uploading</p>
+
+                </div>
+                <div class="drag-area">
+                    <span class="visible">
+                        Drag & drop image here or
+                        <span class="select" role="button"><i class="fa fa-cloud-upload"></i> Files</span>
+                    </span>
+                    <span class="on-drop">Drop images here</span>
+                    <input name="images" type="file" class="file" multiple='multiple' accept='image/*' />
+                </div>
+
+                <!-- IMAGE PREVIEW CONTAINER -->
+                <div class="container_img"></div>
+            </div>
+
+            <div class="container__buttons">
+                <a href="/admin" class="btn btn-14">Cancel</a>
+                <button type="submit" class="btn btn-14">Save</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+<script>
+    /** Variables */
+    let files = [],
+        dragArea = document.querySelector('.drag-area'),
+        input = document.querySelector('.drag-area input'),
+        button = document.querySelector('.card button');
+    select = document.querySelector('.drag-area .select');
+    container = document.querySelector('.container_img');
+
+    /** CLICK LISTENER */
+    select.addEventListener('click', () => input.click());
+
+    /* INPUT CHANGE EVENT */
+    input.addEventListener('change', () => {
+        let file = input.files;
+
+        // if user select no image
+        if (file.length == 0) return;
+
+        for (let i = 0; i < file.length; i++) {
+            if (file[i].type.split("/")[0] != 'image') continue;
+            if (!files.some(e => e.name == file[i].name)) files.push(file[i])
+        }
+
+        input.files = null;
+        console.log(file);
+        showImages();
+    })
+
+    /* SHOW IMAGES */
+    const showImages = () => {
+        let images = '';
+        files.forEach((e, i) => {
+            images += `<div class="image">
+            <img src="${URL.createObjectURL(e)}" alt="image">
+            <span onclick="delImage(${i})">&times;</span>
+            </div>`
+        })
+        container.innerHTML = images
+    }
+    /* DELETE IMAGE */
+    function delImage(index) {
+        files.splice(index, 1);
+        showImages();
+    }
+
+    /* DRAG & DROP */
+    dragArea.addEventListener('dragover', e => {
+        e.preventDefault()
+        dragArea.classList.add('dragover')
+    })
+
+    /* DRAG LEAVE */
+    dragArea.addEventListener('dragleave', e => {
+        e.preventDefault()
+        dragArea.classList.remove('dragover')
+    });
+
+    /* DROP EVENT */
+    dragArea.addEventListener('drop', e => {
+        e.preventDefault()
+        dragArea.classList.remove('dragover');
+
+        let file = e.dataTransfer.files;
+
+
+        for (let i = 0; i < file.length; i++) {
+            /** Check selected file is image */
+            if (file[i].type.split("/")[0] != 'image') continue;
+
+            if (!files.some(e => e.name == file[i].name)) files.push(file[i])
+        }
+        console.log(file);
+        showImages();
+    });
+</script>

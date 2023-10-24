@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta Content-Type="text/javascript">
+    <meta Accept-Encoding="gzip, compress, br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#d7d7d7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Classic & Custom Car Restorations">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.webmanifest">
+    <!-- <link rel="config" href="/workbox-config.js" /> -->
+    <link rel="config" href="/web.config" />
+    <link rel="shortcut icon" href="/assets/icons/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-icon-180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/manifest-icon-512.maskable.png">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" crossorigin="anonymous">
+    <link rel="preload" crossorigin="anonymous" as="font" href="/assets/fonts/orbitron/static/Orbitron-Bold.ttf" />
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+        rel="stylesheet">
+    <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js">
+    </script>
+    <script defer
+        src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js">
+    </script>
+    <script defer src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js">
+    </script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js">
+    </script>
+    <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script src="/public/js/mode.js" defer></script>
+    <title>185 Restorations</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <div class="container_sub_pages">
+    <%- body %>
+    <%- include('../partials/footer.ejs') %>
+    </div>
+</body>
+<script type="text/javascript" id="sw">
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('sw.js').then(function (reg) {
+                console.log('Successfully registered service worker', reg);
+            }).catch(function (err) {
+                console.warn('Error whilst registering service worker', err);
+            });
+        });
+    }
+</script>
+</html>

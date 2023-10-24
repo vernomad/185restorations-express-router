@@ -1,0 +1,79 @@
+<div class="container__upload">
+    <form id="form-new-user" class="form-new-user">
+        <div class="form-rows">
+            <div class="form-items">
+                <label>Name</label>
+                <input required type="text" name="username" id="username" placeholder="Name must between 4 and 20" />
+                <div class="username error"></div>
+                </div>
+                <div class="form-items">
+                    <label>Password</label>
+                    <input type="text" id="password" name="password" placeholder="Your password" />
+                    <div class="password error"></div>
+                </div>
+        </div>
+        <div class="form-items">
+            <label>Avatar</label>
+            <input type="file" name="avatarImage" id="avatarImage" class="avatarImage filepond" />
+            <div class="avatarImage error"></div>
+        </div>
+
+        <div class="button__div">
+            <button type="submit" class="btn">Save</button>
+        </div>
+        </form>
+</div>
+<script defer src="/public/js/upload.js"></script>
+<script>
+    const form = document.getElementById('form-new-user');
+    const usernameError = document.querySelector('.username.error');
+    const avatarImageError = document.querySelector('.avatarImage.error');
+    const passwordError = document.querySelector('.password.error');
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        //reset errors
+        usernameError.textContent = '';
+        avatarImageError.textContent = '';
+        passwordError.textContent = '';
+
+        // get values
+
+        const username = form.username.value;
+        const avatarImage = form.avatarImage.value;
+        const password = form.password.value;
+        try {
+            const res = await fetch("/register", {
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                method: "POST",
+                body: JSON.stringify({
+                    username,
+                    avatarImage,
+                    password
+                }),
+
+            })
+            const data = await res.json({
+                username: username,
+                password: password
+            });
+            console.log(data, "From DATA");
+            if (data.errors) {
+                usernameError.textContent = data.errors.username
+                avatarImageError.textContent = data.errors.avatarImage
+                passwordError.textContent = data.errors.password
+
+            }
+            if (data.newUser) {
+                location.assign('/admin', {
+                    msg: `${data.newUser.username} has been created!`
+                })
+            }
+        } catch (errors) {
+            console.log(errors)
+
+        }
+    });
+</script>
