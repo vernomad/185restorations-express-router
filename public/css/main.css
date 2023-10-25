@@ -358,6 +358,7 @@ h1 span {
   color: var(--theme-text-color);
   font-size: clamp(2rem, 7vw, 3rem);
   letter-spacing: -1px;
+  font-weight: 800;
 }
 
 h2 {
@@ -738,7 +739,6 @@ form {
 }
 
 .page-subtitle-p {
-  letter-spacing: 1px;
   padding-left: 0.4rem;
   max-width: 400px;
   color: rgb(183, 183, 183);
@@ -1620,7 +1620,6 @@ li {
   gap: 2rem;
   overflow: hidden;
   justify-items: center;
-  padding-right: 5rem;
   grid-row: 4/5;
 }
 
@@ -1628,6 +1627,8 @@ li {
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
+  text-align: left;
   max-width: 400px;
 }
 
@@ -1646,19 +1647,19 @@ li {
 @media (min-width: 646px) {
   .even-columns {
     grid-auto-flow: column;
-    grid-auto-columns: 50%;
+    grid-auto-columns: 47%;
   }
   iframe {
     height: 250px;
-  }
-  .mapsfinder {
-    padding-left: 1rem;
   }
 }
 @media (min-width: 646px) and (max-width: 860px) {
   .mapsfinder {
     width: 100%;
     max-width: 330px;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   iframe {
     width: 100%;
