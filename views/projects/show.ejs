@@ -61,13 +61,13 @@
 
     </main>
 </div>
-<script type="text/javascript">
+<script type="text/javascript" defer>
     var modal = document.getElementById('myModal');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById('caption');
 
     function image(event) {
-        modal.style.display = "block";
+        modal.style.display = "grid";
         modalImg.src = event.target.src;
         captionText.innerHTML = event.target.alt;
     }

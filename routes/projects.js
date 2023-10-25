@@ -9,7 +9,7 @@ const imageMimeTypes = ["image/jpeg", "image/png", "images/gif"];
 const handleErrors = require("../controllers/projectErrors");
 const GalleryImages = require("../models/galleryImages");
 
-router.get("/home", async (req, res) => {
+router.get("/", async (req, res) => {
   let query = Project.find();
 
   if (req.query.name != null && req.query.name != "") {

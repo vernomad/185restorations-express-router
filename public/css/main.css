@@ -171,7 +171,7 @@
 
 .menu {
   position: fixed;
-  left: 1.5rem;
+  left: 1rem;
   top: 3.7rem;
   font-weight: 600;
   transition: 0.5s ease;
@@ -424,7 +424,7 @@ nav ul {
 nav li {
   list-style: none;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 nav li:first-child {
@@ -624,7 +624,7 @@ form {
 
 .flow-about {
   width: 100%;
-  max-width: 650px;
+  max-width: 750px;
   padding: 0 1rem;
 }
 
@@ -734,11 +734,11 @@ form {
   letter-spacing: 0.2px;
   padding-left: 0.4rem;
   font-family: Orbitron;
-  letter-spacing: 0.5px;
+  letter-spacing: 3px;
 }
 
 .page-subtitle-p {
-  letter-spacing: 0.2px;
+  letter-spacing: 1px;
   padding-left: 0.4rem;
   max-width: 400px;
   color: rgb(183, 183, 183);
@@ -1862,7 +1862,7 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   grid-template-rows: auto;
   height: fit-content;
-  grid-gap: 1rem;
+  grid-gap: 2px;
 }
 
 .content__about {

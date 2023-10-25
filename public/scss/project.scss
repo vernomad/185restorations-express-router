@@ -70,12 +70,17 @@
 }
 
 .image {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+    max-width: 700px;
+    margin: auto;
+}
+
+.image img {
+    // width: 100%;
+    // height: 100%;
+    max-width: 700px;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .image_box {
@@ -99,14 +104,14 @@
 .modal {
     position: fixed;
     display: none;
-    left: 0;
-    top: 0;
-    overflow: auto;
+    align-content: space-around;
+    inset: 0;
+    overflow: hidden;
     height: 100vh;
     width: 100vw;
-    /* padding-top: 5%; */
     background-color: rgba(0, 1, 7, 0.85);
     z-index: 500;
+    text-align: center;
 }
 
 @media only screen and (max-width: 700px) {
@@ -128,7 +133,7 @@
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 700px;
+    //max-width: 700px;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -157,7 +162,7 @@
 }
 
 .outer-caption {
-    display: flex;
+    padding: 1rem;
     height: 50px;
 }
 
@@ -197,7 +202,6 @@
     display: block;
     width: 100%;
     position: relative;
-    margin-top: 1.5rem;
 }
 
 .profile_bg_header h1 span {
