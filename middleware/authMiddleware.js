@@ -19,9 +19,9 @@ const requireAuth = (req, res, next) => {
   }
 };
 
-function setUser(req, res, next) {
+async function setUser(req, res, next) {
   const user = res.locals.user;
-  if (user == null) {
+  if (!user || user === null) {
     console.log("SetUser says No user signed in!");
     // next();
   }

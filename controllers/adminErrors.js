@@ -7,7 +7,7 @@ const handleErrors = (err) => {
   };
   //incorrect username
   if (err.message === "incorrect adminName") {
-    errors.adminName = "AdminName is incorrect";
+    errors.adminName = "Admin name is incorrect";
   }
   //incorrect coverImage
   if (err.message === "incorrect coverImage") {

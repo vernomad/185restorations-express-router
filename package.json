@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "engines": {
-    "node": "v18.17.1"
+    "node": "22.x"
   },
   "scripts": {
     "deploy": "workbox generateSW",
@@ -28,7 +28,7 @@
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "date-fns": "^2.29.3",
-    "dompurify": "^2.4.7",
+    "dompurify": "^3.2.6",
     "dotenv": "^16.0.3",
     "easymde": "^2.18.0",
     "ejs": "^3.1.8",
